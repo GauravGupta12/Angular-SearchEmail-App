@@ -1,0 +1,10 @@
+<h1>
+  {{emailResult}}
+</h1>
+<input type="text"  placeholder="Enter first and last name" #nameToBeSearch />
+<button (click)="searchEmail(nameToBeSearch)">Search Email</button>
+<table>
+	<tr *ngFor="let fullname of nameEmailKeys">
+		<td>{{fullname}}</td>
+	</tr>
+<table>
